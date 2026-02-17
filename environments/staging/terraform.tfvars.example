@@ -1,0 +1,18 @@
+# STAGING Environment Configuration
+# Copy this file to terraform.tfvars and fill in values
+
+project_name       = "myapp"
+environment        = "staging"
+aws_region         = "us-east-1"
+vpc_cidr           = "10.1.0.0/16"
+availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
+alert_email        = "team@company.com"
+certificate_arn    = ""
+codestar_connection_arn = ""
+
+tags = {
+  Project     = "myapp"
+  Environment = "staging"
+  ManagedBy   = "terraform"
+  Team        = "platform"
+}
